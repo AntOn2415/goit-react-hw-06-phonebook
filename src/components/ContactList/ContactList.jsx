@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactItem from '../ContactItem';
 import PropTypes from 'prop-types';
-import {ContactUl} from './ContactList.styled';
+import { ContactUl } from './ContactList.styled';
 
 const ContactList = ({ contacts, onDeleteContact }) => {
   return (
