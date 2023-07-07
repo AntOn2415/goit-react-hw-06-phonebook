@@ -24,7 +24,7 @@ function ContactForm() {
     }
   };
 
-  const handleAddContact = (e) => {
+  const handleAddContact = e => {
     e.preventDefault();
 
     dispatch(addContact(name, number));
@@ -65,4 +65,3 @@ function ContactForm() {
 }
 
 export default ContactForm;
-

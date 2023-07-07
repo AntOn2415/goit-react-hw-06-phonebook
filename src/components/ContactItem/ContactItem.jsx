@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import {ContactLi, ContactBtn} from './ContactItem.styled'
+import { ContactLi, ContactBtn } from './ContactItem.styled';
 
 const ContactItem = ({ contact, onDeleteContact }) => {
   const { name, number } = contact;
@@ -9,10 +9,7 @@ const ContactItem = ({ contact, onDeleteContact }) => {
       <p>
         {name}: {number}
       </p>
-      <ContactBtn
-        type="button"
-        onClick={onDeleteContact}
-      >
+      <ContactBtn type="button" onClick={onDeleteContact}>
         Delete
       </ContactBtn>
     </ContactLi>

@@ -6,15 +6,14 @@ import ContactForm from '../ContactForm';
 import Filter from '../Filter';
 import { ContainerDiv, TitleH1, TitleH2 } from './App.styled';
 
-
 const App = () => {
   const contacts = useSelector(state => state.contacts);
-  const filter = useSelector((state) => state.filter);
+  const filter = useSelector(state => state.filter);
   const dispatch = useDispatch();
 
-  const changeFilter = (e) => {
+  const changeFilter = e => {
     dispatch(setFilter(e.currentTarget.value));
-    };
+  };
 
   const getFilteredContact = () => {
     const normalizedFilter = filter.toLocaleLowerCase();
@@ -40,6 +39,6 @@ const App = () => {
       />
     </ContainerDiv>
   );
-}
+};
 
 export default App;
